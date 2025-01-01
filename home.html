@@ -1,0 +1,285 @@
+<html><head><base href="." /><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEVINGO NG LTD - Farm Machinery Specialists</title>
+<style>
+:root {
+  --primary: #2B5F1E;
+  --secondary: #F7B538;
+  --dark: #1a1a1a;
+  --light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  margin-top: 80px;
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1591638246754-03a240061261?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--secondary);
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+.products {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 3rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-info h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.product-info p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: #1a4614;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .products {
+    padding: 2rem 1rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a href="home.html" class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z" />
+      </svg>
+      DEVINGO NG LTD
+    </a>
+    <div class="nav-links">
+      <a href="products.html">Products</a>
+      <a href="aboutus.html">About</a>
+      <a href="services (2).html">Services</a>
+      <a href="contactus.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Premium Farm Machinery</h1>
+      <p>Your trusted partner in agricultural and construction equipment. We provide top-quality tractors, bulldozers, and farming machinery to boost your productivity.</p>
+      <a href="contactus.html" class="cta-button">Get in touch with us Today</a>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Our Equipment</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/john.jpg');"></div>
+        <div class="product-info">
+          <h3>Agricultural Tractor</h3>
+          <p>Heavy-duty farming tractor with advanced features for maximum efficiency</p>
+          <div class="price">From ₦15,000,000</div>
+          <a href="contactus.html" class="contact-btn">Contact Sales</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/bulldozer\ d6.jpg');"></div>
+        <div class="product-info">
+          <h3>Construction Bulldozer</h3>
+          <p>Reliable bulldozer perfect for construction and land clearing</p>
+          <div class="price">From ₦25,000,000</div>
+          <a href="contactus.html" class="contact-btn">Contact Sales</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background-image: url('images/combine.jpg');"></div>
+        <div class="product-info">
+          <h3>Harvester</h3>
+          <p>Modern harvesting machine for efficient crop collection</p>
+          <div class="price">From ₦20,000,000</div>
+          <a href="contactus.html" class="contact-btn">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'all 0.6s ease-out';
+    observer.observe(card);
+  });
+});
+</script>
+</body></html>
